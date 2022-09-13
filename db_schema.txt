@@ -1,0 +1,16 @@
+CREATE TABLE "user" (
+	"no"	INTEGER NOT NULL,
+	"id"	TEXT NOT NULL UNIQUE,
+	"pw"	TEXT NOT NULL,
+	"name"	TEXT NOT NULL,
+	"insdt"	TEXT NOT NULL,
+	PRIMARY KEY("no" AUTOINCREMENT)
+);
+
+CREATE TABLE "board" (
+	"no"	INTEGER NOT NULL,
+	"subject"	TEXT NOT NULL,
+	"content"	TEXT NOT NULL,
+	"insdt"	TEXT NOT NULL,
+	PRIMARY KEY("no" AUTOINCREMENT)
+);
